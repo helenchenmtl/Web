@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Html Form</title>
+    </head>
+    <style>
+        form{
+            text-align: center;
+        }
+        h1{
+            font-family: monospace;
+            color:rgb(236, 139, 90);
+            text-align: center;
+            font-size: 50px;
+            text-decoration-line: overline;
+            font-weight: 100;
+        }
+        .button, label, :placeholder-shown, sub{
+            font-family: monospace;
+            color:rgb(236, 139, 90);
+            text-align: center;
+            font-size: 25px;
+            font-weight: bold;
+        }
+        input, select{
+            font-size:20px;
+            background-color:rgb(249, 189, 158);
+            padding: 6px 10px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 3px solid rgb(236, 139, 90);
+            -webkit-transition: 0.5s;
+            transition: 0.5s;
+            outline: none;   
+        }
+    </style>
+    <body style="background-color:rgb(251, 224, 211)">
+        <h1>Table reservation form</h1>
+        <form>
+            <label for="fname">Full Name</label><br>
+            <input type="text" name="fname" placeholder="FirstName LastName"><br><br>
+
+            <label for="email">Email adress</label><br>
+            <input type="email" name="email"><br><br>
+
+            <label for="select">Select Tour Package</label><br>
+            <select name="select">
+                <option value=""> </option>
+                <option value="Goa">Goa</option>
+            </select><br><br>
+
+            <label for="adate">Arrival date</label><br>
+            <input type="text" name="adate" placeholder="m/d/y"><br><br>
+
+            <label for="no">Number of people</label><br>
+            <input type="number" name="no"><br><br>
+
+            <label for="checkbox">What would you want to avail?</label><br>
+            <input type="checkbox" name="boarding" value="boarding">
+            <label for="boarding" style="font-weight: 100">Boarding</label><br>
+            <input type="checkbox" name="fooding" value="fooding">
+            <label for="fooding" style="font-weight: 100">Fooding</label><br>
+            <input type="checkbox" name="sight seeing" value="sightseeing">
+            <label for="sightseeing" style="font-weight: 100">Sight seeing</label><br><br>
+
+            <label for="discount">Discount Coupon Code</label><br>
+            <input type="text" name="discount"><br><br>
+
+            <label for="radio">Terms and Conditions</label><br>
+            <input type="radio" name="tc" value="agree">
+            <label for="agree" style="font-weight: 100">I agree</label><br>
+            <input type="radio" name="tc" value="disagree">
+            <label for="disagree" style="font-weight: 100">I disagree</label><br><br>
+
+            <input type="submit" name="submit" value="Submit" class="button">
+        </form>
+    </body>
+</html>
