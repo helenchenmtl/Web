@@ -1,0 +1,16 @@
+p{
+    background-color:pink;
+    font-family: Verdana, sans-serif;
+}
+div.one{
+    color:blue;
+    font-size:36px;
+}
+p.fontsize{
+    font-size:24px;
+}
+div.two{
+    background-color: lightgreen;
+    font-size:24px;
+    font-weight: bold;
+}
