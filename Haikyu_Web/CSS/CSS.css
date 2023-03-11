@@ -1,0 +1,68 @@
+.hover:hover {
+    display: none;
+}
+
+.img .img1 {
+    display: none;
+}
+
+.img:hover .img1 {
+    display: inline;
+}
+
+.border {
+    border: 2px solid #272c4d;
+}
+
+.rotate {
+    animation: rotation 6s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+  
+  #position_animation img {
+      position: absolute;
+  }
+  
+  .top {
+      animation-name: fade;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+      animation-duration: 2.5s;
+      animation-direction: alternate;
+  }
+  
+  @keyframes fade {
+      0% {
+          opacity: 1;
+      }
+      25% {
+          opacity: 1;
+      }
+      75% {
+          opacity: 0;
+      }
+      100% {
+          opacity: 0;
+      }
+  }
+
+  .error {
+    color: #FF0000;
+    font-size:30px;
+    }
